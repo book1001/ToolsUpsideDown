@@ -1,10 +1,19 @@
-How to make it go:
-$ git clone http://github.com/reverie/yourworldoftext.git yourworld
+# Environment
+```
+ - python 2.7
+```
+
+# Build
+```
+$ git clone https://github.com/book1001/ToolsUpsideDown.git ToolsUpsideDown
 $ export PYTHONPATH=`pwd`
-$ cd yourworld
+$ cd ToolsUpsideDown
+$ python -m virtualenv venv
+$ source ./venv/bin/activate
 $ pip install -r requirements.txt
 $ python manage.py syncdb
-$ python.manage.py runserver
+$ python manage.py runserver
+```
 
 The lay of the land:
  - Your World of Text is plain Django. Put in your database settings and you should be able to run it locally right away.
