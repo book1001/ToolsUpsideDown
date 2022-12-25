@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.http import Http404
 
-from yourworld.lib.jsonfield import DictField
+from ToolsUpsideDown.lib.jsonfield import DictField
 
 class World(models.Model):
     name = models.TextField(unique=True)

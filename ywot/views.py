@@ -8,10 +8,10 @@ from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render_to_response, redirect
 from django.utils import simplejson
 
-from yourworld.helpers import req_render_to_response
-from yourworld.lib import log
-from yourworld.ywot.models import Tile, World, Edit, Whitelist
-from yourworld.ywot import permissions
+from ToolsUpsideDown.helpers import req_render_to_response
+from ToolsUpsideDown.lib import log
+from ToolsUpsideDown.ywot.models import Tile, World, Edit, Whitelist
+from ToolsUpsideDown.ywot import permissions
 
 #
 # Helpers

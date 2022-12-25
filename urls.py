@@ -5,7 +5,7 @@ from django.views.generic.simple import redirect_to
 
 from helpers import here
 
-urlpatterns = patterns('yourworld.ywot.views',
+urlpatterns = patterns('ToolsUpsideDown.ywot.views',
     ### Web page:
     # Main
     url(r'^home/$', 'home', name='home'),

@@ -1,5 +1,5 @@
 def can_read(user, world):
-    from yourworld.ywot.models import Whitelist
+    from ToolsUpsideDown.ywot.models import Whitelist
     if world.public_readable:
         return True
     if not user.is_authenticated():
@@ -15,7 +15,7 @@ def can_read(user, world):
         return False
        
 def can_write(user, world):
-    from yourworld.ywot.models import Whitelist
+    from ToolsUpsideDown.ywot.models import Whitelist
     if world.public_writable:
         return True
     if not user.is_authenticated():
