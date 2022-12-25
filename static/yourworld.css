@@ -1,5 +1,5 @@
-* { 
-    margin: 0; 
+* {
+    margin: 0;
     padding: 0;
 }
 body {
@@ -11,7 +11,7 @@ img
 {
     border: 0;
     text-decoration: none;
-} 
+}
 
 .tilecont {
     position: absolute;
@@ -131,8 +131,8 @@ a.urlLink {
 
 #nav {
  display: none;
- position: absolute; 
- text-align: right;                                                           
+ position: absolute;
+ text-align: right;
  top: 1.5em; /* adjusted by JS */
  background: #E5E5FF; /* Like title w/white background, no alpha */
  width: 8em;
@@ -141,19 +141,19 @@ a.urlLink {
  border-bottom: 1px solid #ccc;
 }
 
-#nav li { 
-    display: block;                                                           
-    list-style: none; 
+#nav li {
+    display: block;
+    list-style: none;
     position: relative;
     cursor: pointer;
 }
 
-#nav a {      
-    display: block; 
+#nav a {
+    display: block;
 }
 
-* html #nav ul { line-height: 0; } /* IE6 "fix" */                            
-#nav ul a { zoom: 1; } /* IE6/7 fix */                                        
+* html #nav ul { line-height: 0; } /* IE6 "fix" */
+#nav ul a { zoom: 1; } /* IE6/7 fix */
 
 #nav a { }
 #nav li.hover { background-color: white; }
@@ -166,18 +166,18 @@ a.urlLink {
 /*** SIMPLEMODAL code taken from jquery.simplemodal ***/
 #simplemodal-overlay {background-color:#000; cursor:default;}
 #simplemodal-container {
-       color:#333; 
-       background-color:#e5e5ff; 
-       border:6px solid #c3c3ff; 
+       color:#333;
+       background-color:#e5e5ff;
+       border:6px solid #c3c3ff;
        padding:12px;
    }
 #simplemodal-container a {color:#ddd;}
 
 .simplemodal-closelink { color: blue; text-decoration: underline; cursor:pointer}
-.simplemodal-closebutton { 
-    position:absolute; 
-    top:-15px; 
-    right:-15px; 
+.simplemodal-closebutton {
+    position:absolute;
+    top:-15px;
+    right:-15px;
     cursor:pointer;
     font-size: 160%;
 }

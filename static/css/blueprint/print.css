@@ -10,6 +10,10 @@
    * This is a compressed file. See the sources in the 'src' directory.
 
 ----------------------------------------------------------------------- */
+@font-face {
+  font-family: 'FragmentMono';
+  src: url('FragmentMono-Regular.woff2') format('woff');
+}
 
 /* print.css */
 body {line-height:1.5;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;color:#000;background:none;font-size:10pt;}
@@ -20,7 +24,7 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 
 h1, h2, h3, h4, h5, h6 {font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif;}
 
-code {font:.9em "Courier New", Monaco, Courier, monospace;}
+code {font:.9em "FragmentMono", Monaco, Courier, monospace;}
 
 a img {border:none;}
 p img.top {margin-top:0;}
