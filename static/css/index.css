@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.menu-top-left {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+}
+
+.menu-top-right {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+}
+
+.menu-bottom-left {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+}
+
+.meun-btn {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: HelveticaNeue, sans-serif;
+	font-size: 14px;
+}
+
+.meun-btn:hover {
+	transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+}
+
+.toolsWorld {
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-width: 1px;
+	width: 99vw;
+	height: 99vh;
+}
+
+#areaIframe {
+	display: none;
+	position: fixed;
+	width: 30vw;
+	height: 50vh;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 3;
+}
+
+.kcYbDS {
+	display: none !important;
+}
+
+.handle {
+	width: 558px;
+	background: #ccc;
+	border: 1px solid #000;
+	border-radius: 4px;
+	height: 23px;
+	margin-bottom: -3px;
+}
+
+.frameOverlay {
+	height: 100%;
+	width: 100%;
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+div.a {
+	position: fixed;
+	top: 50%;
+	z-index: 4;
+}
+
+div.b {
+	position: fixed;
+	top: 50%;
+	z-index: 4;
+}
+
+div.c {
+	position: fixed;
+	top: 50%;
+	z-index: 4;
+}
+
+div.d {
+	position: fixed;
+	top: 50%;
+	z-index: 4;
+}
