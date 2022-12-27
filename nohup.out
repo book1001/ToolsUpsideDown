@@ -4477,3 +4477,63 @@ error: [Errno 104] Connection reset by peer
 [26/Dec/2022 22:21:43] "PRI * HTTP/2.0" 505 -
 [26/Dec/2022 22:29:46] "GET / HTTP/1.1" 404 2197
 [27/Dec/2022 03:26:22] "GET / HTTP/1.1" 404 2197
+Unhandled exception in thread started by <function inner_run at 0x7f411f008b18>
+Validating models...
+Traceback (most recent call last):
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 48, in inner_run
+    self.validate(display_num_errors=True)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/core/management/base.py", line 245, in validate
+    num_errors = get_validation_errors(s, app)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/core/management/validation.py", line 28, in get_validation_errors
+    for (app_name, error) in get_app_errors().items():
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/db/models/loading.py", line 146, in get_app_errors
+    self._populate()
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/db/models/loading.py", line 64, in _populate
+    self.load_app(app_name)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/db/models/loading.py", line 78, in load_app
+    models = import_module('.models', app_name)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/ubuntu/git/ToolsUpsideDown/ywot/models.py", line 5, in <module>
+    from yourworld.lib.jsonfield import DictField
+ImportError: No module named yourworld.lib.jsonfield
+Unhandled exception in thread started by <function inner_run at 0x7f9042fecb18>
+Validating models...
+Traceback (most recent call last):
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 48, in inner_run
+    self.validate(display_num_errors=True)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/core/management/base.py", line 245, in validate
+    num_errors = get_validation_errors(s, app)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/core/management/validation.py", line 28, in get_validation_errors
+    for (app_name, error) in get_app_errors().items():
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/db/models/loading.py", line 146, in get_app_errors
+    self._populate()
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/db/models/loading.py", line 64, in _populate
+    self.load_app(app_name)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/db/models/loading.py", line 78, in load_app
+    models = import_module('.models', app_name)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/ubuntu/git/ToolsUpsideDown/ywot/models.py", line 5, in <module>
+    from yourworld.lib.jsonfield import DictField
+ImportError: No module named yourworld.lib.jsonfield
+Unhandled exception in thread started by <function inner_run at 0x7f3ef15e9b18>
+Validating models...
+Traceback (most recent call last):
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 48, in inner_run
+    self.validate(display_num_errors=True)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/core/management/base.py", line 245, in validate
+    num_errors = get_validation_errors(s, app)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/core/management/validation.py", line 28, in get_validation_errors
+    for (app_name, error) in get_app_errors().items():
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/db/models/loading.py", line 146, in get_app_errors
+    self._populate()
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/db/models/loading.py", line 64, in _populate
+    self.load_app(app_name)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/db/models/loading.py", line 78, in load_app
+    models = import_module('.models', app_name)
+  File "/home/ubuntu/git/ToolsUpsideDown/venv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/ubuntu/git/ToolsUpsideDown/ywot/models.py", line 5, in <module>
+    from yourworld.lib.jsonfield import DictField
+ImportError: No module named yourworld.lib.jsonfield

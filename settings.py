@@ -53,7 +53,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
 )
 
-ROOT_URLCONF = 'yourworld.urls'
+ROOT_URLCONF = 'ToolsUpsideDown.urls'
 
 TEMPLATE_DIRS = (
     here('templates')
