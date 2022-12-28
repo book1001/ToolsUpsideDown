@@ -1,10 +1,12 @@
-How to make it go:
+# Build
+```
 $ git clone http://github.com/reverie/yourworldoftext.git yourworld
 $ export PYTHONPATH=`pwd`
 $ cd yourworld
 $ pip install -r requirements.txt
 $ python manage.py syncdb
 $ python.manage.py runserver
+```
 
 The lay of the land:
  - Your World of Text is plain Django. Put in your database settings and you should be able to run it locally right away.
