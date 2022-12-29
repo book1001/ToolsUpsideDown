@@ -6,12 +6,12 @@ from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render_to_response, redirect
-from django.utils import simplejson
+import json
 
-from ToolsUpsideDown.helpers import req_render_to_response
-from ToolsUpsideDown.lib import log
-from ToolsUpsideDown.ywot.models import Tile, World, Edit, Whitelist
-from ToolsUpsideDown.ywot import permissions
+from helpers import req_render_to_response
+from lib import log
+from ywot.models import Tile, World, Edit, Whitelist
+from ywot import permissions
 
 #
 # Helpers
@@ -54,7 +54,7 @@ def fetch_updates(request, world):
             response[tile_key] = d
         else:
             raise ValueError, 'Unknown JS version'
-    return HttpResponse(simplejson.dumps(response))
+    return HttpResponse(json.dumps(response))
     
 def send_edits(request, world):
     assert permissions.can_write(request.user, world) # Checked by router
@@ -95,7 +95,7 @@ def send_edits(request, world):
                             content=repr(edits),
                             ip=request.META['REMOTE_ADDR'],
                             )
-    return HttpResponse(simplejson.dumps(response))
+    return HttpResponse(json.dumps(response))
 
 #
 # Account Views
@@ -121,5 +121,8 @@ def home(request):
         state['announce'] = "Sorry, your World of Text doesn't work well with Internet Explorer."
     return req_render_to_response(request, 'home.html', {
         'settings': settings,
-        'state': simplejson.dumps(state),
+        'state': json.dumps(state),
     })
+
+def func_risd_2023(request):
+    return req_render_to_response(request, 'risd_2023.html')

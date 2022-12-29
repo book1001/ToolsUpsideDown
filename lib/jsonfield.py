@@ -2,7 +2,7 @@
 
 from django.db import models
 from django.core.serializers.json import DjangoJSONEncoder
-from django.utils import simplejson as json
+import json
 
 class DictField(models.TextField):
     """DictField is a textfield that contains JSON-serialized dictionaries."""

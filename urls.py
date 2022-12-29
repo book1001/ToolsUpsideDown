@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
 from django.conf import settings
-from django.conf.urls.defaults import *
-from django.views.generic.simple import redirect_to
+from django.conf.urls import *
+#from django.views.generic import RedirectView
 
 from helpers import here
 
-urlpatterns = patterns('ToolsUpsideDown.ywot.views',
+urlpatterns = patterns('ywot.views',
     ### Web page:
     # Main
-    url(r'^home/$', 'home', name='home'),
+    url(r'^$', 'home', name='home'),
+    url(r'^risd/$', 'func_risd_2023', name='func_risd_2023'),
+
     
     ### Worlds:
     # World management
@@ -18,9 +20,9 @@ urlpatterns = patterns('ToolsUpsideDown.ywot.views',
     url(r'^ajax/urllink/$', 'urllink', name='urllink'),
 )
 
-urlpatterns += patterns('',
-    (r'^favicon\.ico$', redirect_to, {'url': '/static/favicon.png'}),
-)
+#urlpatterns += patterns('',
+#    (r'^favicon\.ico$', RedirectView, {'url': '/static/favicon.png'}),
+#)
 
 if settings.DEBUG:
     urlpatterns += patterns('',
